@@ -1,4 +1,5 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
+"""execute multiple coroutines at the same time with async"""
 import asyncio
 import heapq
 wait_random = __import__('0-basic_async_syntax').wait_random
