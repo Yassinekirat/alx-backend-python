@@ -1,10 +1,8 @@
 #!/usr/bin/env python3
-#!/usr/bin/env python3
+"""Complex types - mixed list"""
+from typing import List, Union
 
-sum_list = __import__('5-sum_list').sum_list
 
-floats = [3.14, 1.11, 2.22]
-floats_sum = sum_list(floats)
-print(floats_sum == sum(floats))
-print(sum_list.__annotations__)
-print("sum_list(floats) returns {} which is a {}".format(floats_sum, type(floats_sum)))
+def sum_mixed_list(mxd_lst: List[Union[int, float]]) -> float:
+    """Complex types - mixed list"""
+    return float(sum(mxd_lst))
